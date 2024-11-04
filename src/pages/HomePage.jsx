@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Badge from "../components/Badge";
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <div>
+      <Badge label="The Best UI" />
+      <Badge label="Masterful Design" />
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;

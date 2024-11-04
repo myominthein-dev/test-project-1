@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        futura: ["Futura", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
+      },
       colors: {
         blue: {
           50: "#e0eaec", // 10%
@@ -17,6 +21,7 @@ export default {
           900: "#223236", // 90%
           1000: "#141e20", // 100%
         },
+        lightGrey: "#c4c4c4",
         black: {
           50: "#d0d2d2", // 10%
           100: "#b1b4b5", // 20%
