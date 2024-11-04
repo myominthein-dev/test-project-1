@@ -14,7 +14,7 @@ export default {
           200: "#b2cbd0", // 30%
           300: "#98b9c0", // 40%
           400: "#7fa8b1", // 50%
-          BASE: "#6596a1", // Base color
+          PRIMARY: "#6596a1", // Base color;
           600: "#547d86", // 60%
           700: "#43646b", // 70%
           800: "#334b51", // 80%
@@ -22,7 +22,9 @@ export default {
           1000: "#141e20", // 100%
         },
         lightGrey: "#c4c4c4",
+        secondaryGrey: "#7f7d7d",
         black: {
+          PRIMARY: "#223236",
           50: "#d0d2d2", // 10%
           100: "#b1b4b5", // 20%
           200: "#8a8f90", // 30%
