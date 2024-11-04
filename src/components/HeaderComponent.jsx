@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeaderComponent = () => {
   return (
-    <div>HeaderComponent</div>
+    <div>HeaderComponent Lay Pr</div>
   )
 }
 
