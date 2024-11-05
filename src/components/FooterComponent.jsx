@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Container from "./Container";
 
 const FooterComponent = () => {
   return (
-    <div>FooterComponent</div>
-  )
-}
+    <footer>
+      <Container className={"py-5 px-5"}>FooterComponent</Container>
+    </footer>
+  );
+};
 
-export default FooterComponent
+export default FooterComponent;

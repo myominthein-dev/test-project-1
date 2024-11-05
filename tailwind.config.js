@@ -38,6 +38,10 @@ export default {
           1000: "#040606", // 100%
         },
       },
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(359.99deg, #FFFFFF 0%, #CCDCE0 108.03%)",
+      },
     },
   },
   plugins: [],
