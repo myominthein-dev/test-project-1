@@ -3,6 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        lato: ["Lato", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        padauk: ["Padauk", "sans-serif"],
+        futura: ["Futura", "Trebuchet MS", "Arial", "sans-serif"], // Futura with fallbacks
+      },
       colors: {
         blue: {
           50: "#e0eaec", // 10%
@@ -30,6 +36,10 @@ export default {
           900: "#070a0b", // 90%
           1000: "#040606", // 100%
         },
+      },
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(359.99deg, #FFFFFF 0%, #CCDCE0 108.03%)",
       },
     },
   },
