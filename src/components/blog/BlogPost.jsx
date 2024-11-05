@@ -4,6 +4,7 @@ import Phone from "../../assets/BlogAssets/chart-in-iphone.png";
 import Article from "../../assets/BlogAssets/blog-post-article.png";
 import SaleBox from "../../assets/BlogAssets/sale-box.png";
 import DeskStop from "../../assets/BlogAssets/contents-in-desktop.png";
+import BlogIndicator from "./BlogIndicator";
 
 const BlogPost = () => {
   const postLists = [
@@ -57,6 +58,7 @@ const BlogPost = () => {
             />
           ))}
         </div>
+        <BlogIndicator />
       </div>
     </section>
   );
