@@ -5,6 +5,7 @@ import MasterfulDesign from "../components/MasterfulDesign";
 import NextLevelInnovation from "../components/NextLevelInnovation";
 import MagicUnleash from "../components/MagicUnleash";
 import Testimonial from "../components/Testimonial";
+import Action from "../components/Action";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <NextLevelInnovation />
       <MagicUnleash />
       <Testimonial />
+      <Action />
     </div>
   );
 };
