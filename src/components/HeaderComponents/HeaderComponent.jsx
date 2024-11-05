@@ -21,7 +21,7 @@ const HeaderComponent = () => {
           <img src={vactor} />
         </nav>
 
-        <navbar className="w-[250px] d-none flex gap-10 text-[14px] leading-[22px] font-lato h-[22px]">
+        <navbar className="w-[250px] d-none flex justify-between text-[14px] leading-[22px] font-lato h-[22px]">
           <span className="cursor-pointer" onClick={() => navHandler("/")}> 
             <Nav path={path} origin="/" text={"Home"} />
           </span>
