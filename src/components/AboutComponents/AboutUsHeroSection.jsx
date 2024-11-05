@@ -1,5 +1,5 @@
 import React from "react";
-import fourPeopleAtTable from "../assets/AboutAssets/four-people-at-table.png";
+import fourPeopleAtTable from "../../assets/AboutAssets/four-people-at-table.png";
 
 const AboutUsHeroSection = () => {
   return (

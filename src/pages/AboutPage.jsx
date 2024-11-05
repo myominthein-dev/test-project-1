@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../components/Container";
-import AboutUsHeroSection from "../components/AboutUsHeroSection";
+import AboutUsHeroSection from "../components/AboutComponents/AboutUsHeroSection";
 
 const AboutPage = () => {
   return (
