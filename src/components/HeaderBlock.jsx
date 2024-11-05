@@ -15,7 +15,7 @@ const HeaderBlock = ({
         <span className={`text-${firstColor}-PRIMARY`}>{firstHeadline}</span>{" "}
         <span className={`text-${secondColor}-PRIMARY`}>{secondHeadline}</span>
       </h2>
-      <p className="font-lato leading-6 text-secondaryGrey w-1/3 mx-auto">
+      <p className="font-lato leading-6 text-secondaryGrey w-full md:w-1/3 mx-auto">
         {children}
       </p>
     </div>

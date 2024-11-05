@@ -1,6 +1,6 @@
 /* GOOGLE FONT */
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -9,18 +9,24 @@
 /* LOCAL FONT */
 
 @font-face {
-    font-family: "Futura";
-    src: url('/src/assets/fonts/futura/FuturaPTMedium.otf') format("opentype");
+  font-family: "Futura";
+  src: url("/src/assets/fonts/futura/FuturaPTMedium.otf") format("opentype");
 }
 @font-face {
-    font-family: "Futura Bold";
-    src: url('/src/assets/fonts/futura/FuturaPTBold.otf') format("opentype");
+  font-family: "Futura Bold";
+  src: url("/src/assets/fonts/futura/FuturaPTBold.otf") format("opentype");
 }
 @font-face {
-    font-family: "Futura Light";
-    src: url('/src/assets/fonts/futura/FuturaPTLight.otf') format("opentype");
+  font-family: "Futura Light";
+  src: url("/src/assets/fonts/futura/FuturaPTLight.otf") format("opentype");
 }
 @font-face {
-    font-family: "Futura Heavy";
-    src: url('/src/assets/fonts/futura/FuturaPTHeavy.otf');
+  font-family: "Futura Heavy";
+  src: url("/src/assets/fonts/futura/FuturaPTHeavy.otf");
+}
+
+@layer components {
+  .custom__button {
+    @apply px-6 py-3 bg-blue-PRIMARY rounded-lg text-white font-normal border-none outline-none cursor-pointer leading-5 w-auto select-none;
+  }
 }
