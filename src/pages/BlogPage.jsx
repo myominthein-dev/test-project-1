@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../components/Container";
 import HeaderBlock from "../components/HeaderBlock";
-import { BlogHero } from "../components/blog";
+import { BlogHero, BlogPost } from "../components/blog";
 const BlogPage = () => {
   return (
     <section>
@@ -19,6 +19,7 @@ const BlogPage = () => {
           </HeaderBlock>
           <BlogHero />
         </div>
+        <BlogPost />
       </Container>
     </section>
   );
