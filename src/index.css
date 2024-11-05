@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 /* LOCAL FONT */
-
+/* 
 @font-face {
     font-family: "Futura";
     src: url('/src/assets/fonts/futura/FuturaPTMedium.otf') format("opentype");
@@ -23,4 +23,22 @@
 @font-face {
     font-family: "Futura Heavy";
     src: url('/src/assets/fonts/futura/FuturaPTHeavy.otf');
+} */
+
+
+@font-face {
+    font-family: "Futura";
+    src: url('/src/assets/fonts/futura-pt/FuturaCyrillicMedium.ttf') format("opentype");
+}
+@font-face {
+    font-family: "Futura Bold";
+    src: url('/src/assets/fonts/futura-pt/FuturaCyrillicBold.ttf') format("opentype");
+}
+@font-face {
+    font-family: "Futura Light";
+    src: url('/src/assets/fonts/futura-pt/FuturaCyrillicLight.ttf') format("opentype");
+}
+@font-face {
+    font-family: "Futura Heavy";
+    src: url('/src/assets/fonts/futura-pt/FuturaCyrillicExtraBold.ttf');
 }
