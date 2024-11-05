@@ -1,20 +1,14 @@
 import React from "react";
 import Badge from "../components/Badge";
 import HeaderBlock from "../components/HeaderBlock";
+import MasterfulDesign from "../components/MasterfulDesign";
+import NextLevelInnovation from "../components/NextLevelInnovation";
 
 const HomePage = () => {
   return (
     <div>
-      <HeaderBlock
-        label="The Best UI"
-        firstColor="black"
-        firstHeadline="A New Era Of"
-        secondColor="blue"
-        secondHeadline="Design Excellence"
-      >
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's
-      </HeaderBlock>
+      <MasterfulDesign />
+      <NextLevelInnovation />
     </div>
   );
 };

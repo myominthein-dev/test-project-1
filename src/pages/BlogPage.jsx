@@ -5,8 +5,8 @@ import { BlogHero, BlogPost } from "../components/blog";
 const BlogPage = () => {
   return (
     <section>
-      <Container className={"py-5"}>
-        <div className="bg-gradient-to-b from-[#CCDCE0] to-[#FFFFFF]">
+      <Container>
+        <div className="bg-gradient-to-b from-[#CCDCE0] to-[#FFFFFF] py-20">
           <HeaderBlock
             label={"Our Blog"}
             firstColor="black-900"

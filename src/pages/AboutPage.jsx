@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Container from "../components/Container";
+import AboutUsHeroSection from "../components/AboutComponents/AboutUsHeroSection";
 
 const AboutPage = () => {
   return (
-    <div>AboutPage</div>
-  )
-}
+    <section>
+      <Container className={" py-5 px-5"}>
+        {/* Hero Section  */}
+        <AboutUsHeroSection />
+      </Container>
+    </section>
+  );
+};
 
-export default AboutPage
+export default AboutPage;

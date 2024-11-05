@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 /* LOCAL FONT */
-
+/* /*  */
 @font-face {
   font-family: "Futura";
   src: url("/src/assets/fonts/futura/FuturaPTMedium.otf") format("opentype");
@@ -24,7 +24,6 @@
   font-family: "Futura Heavy";
   src: url("/src/assets/fonts/futura/FuturaPTHeavy.otf");
 }
-
 @layer components {
   .custom__button {
     @apply px-6 py-3 bg-blue-PRIMARY rounded-lg text-white font-normal border-none outline-none cursor-pointer leading-5 w-auto select-none;
