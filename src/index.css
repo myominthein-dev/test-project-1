@@ -1,5 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Padauk:wght@400;700&display=swap");
+/* GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* LOCAL FONT */
+/* 
+@font-face {
+    font-family: "Futura";
+    src: url('/src/assets/fonts/futura/FuturaPTMedium.otf') format("opentype");
+}
+@font-face {
+    font-family: "Futura Bold";
+    src: url('/src/assets/fonts/futura/FuturaPTBold.otf') format("opentype");
+}
+@font-face {
+    font-family: "Futura Light";
+    src: url('/src/assets/fonts/futura/FuturaPTLight.otf') format("opentype");
+}
+@font-face {
+    font-family: "Futura Heavy";
+    src: url('/src/assets/fonts/futura/FuturaPTHeavy.otf');
+} */
+
+
+@font-face {
+    font-family: "Futura";
+    src: url('/src/assets/fonts/futura-pt/FuturaCyrillicMedium.ttf') format("opentype");
+}
+@font-face {
+    font-family: "Futura Bold";
+    src: url('/src/assets/fonts/futura-pt/FuturaCyrillicBold.ttf') format("opentype");
+}
+@font-face {
+    font-family: "Futura Light";
+    src: url('/src/assets/fonts/futura-pt/FuturaCyrillicLight.ttf') format("opentype");
+}
+@font-face {
+    font-family: "Futura Heavy";
+    src: url('/src/assets/fonts/futura-pt/FuturaCyrillicExtraBold.ttf');
+}

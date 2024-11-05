@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Badge from "../components/Badge";
+import HeaderBlock from "../components/HeaderBlock";
+import MasterfulDesign from "../components/MasterfulDesign";
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <div>
+      <MasterfulDesign />
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;
