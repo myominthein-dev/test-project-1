@@ -11,7 +11,7 @@ const textList = [
 
 const NextLevelInnovation = () => {
   return (
-    <Container className="max-w-[1440px] min-h-[541px] ">
+    <Container className="max-w-[1440px]  ">
       <div className="max-w-[1440px] mx-auto px-6 md:px-16 lg:p-16 flex flex-col md:flex-row md:justify-between gap-8">
         <div className="w-full md:w-[371px] lg:w-[500px]">
           <Badge label="Next-Level Innovation" />
