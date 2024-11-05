@@ -2,7 +2,7 @@ import React from "react";
 
 const BlogPostCard = ({ imgSrc, date, cardTitle, cardParagraph }) => {
   return (
-    <div className=" col-span-1 shadow-lg rounded-lg hover:-translate-y-1 duration-200">
+    <div className=" col-span-1 shadow-lg rounded-2xl hover:-translate-y-1 duration-200">
       <div>
         <img
           src={imgSrc}
@@ -14,7 +14,7 @@ const BlogPostCard = ({ imgSrc, date, cardTitle, cardParagraph }) => {
           <span className="text-xs text-secondaryGrey font-lato font-light">
             {date}
           </span>
-          <h3 className=" font-futura font-medium text-xl md:text-2xl text-black-PRIMARY">
+          <h3 className=" font-futura font-normal text-xl md:text-2xl text-black-PRIMARY">
             {cardTitle}
           </h3>
           <p className=" font-lato font-normal text-base text-secondaryGrey">

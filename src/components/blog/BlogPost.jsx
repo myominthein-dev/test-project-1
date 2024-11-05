@@ -47,7 +47,7 @@ const BlogPost = () => {
         <h2 className="text-2xl md:text-3xl font-futura font-bold text-black-PRIMARY">
           New Blogs For You
         </h2>
-        <div className=" grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14">
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
           {postLists.map((post) => (
             <BlogPostCard
               key={post.id}
