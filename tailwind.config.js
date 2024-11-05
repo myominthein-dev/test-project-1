@@ -22,6 +22,7 @@ export default {
           900: "#223236", // 90%
           1000: "#141e20", // 100%
         },
+        lightBlue: "#f0f5f6",
         lightGrey: "#c4c4c4",
         secondaryGrey: "#7f7d7d",
         secondaryBlue: "#6596a1",
