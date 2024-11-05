@@ -25,7 +25,7 @@ const check = [
 
 const MasterfulDesign = () => {
   return (
-    <Container className="max-w-[1440px] min-h-[875px] pb-[50px] md:py-[50px] lg:py-0 lg:pt-[100px]">
+    <Container className="max-w-[1440px]  pb-[50px] md:pb-0 md:pt-[50px] lg:pb-0 lg:py-0 lg:pt-[100px]">
       <HeaderBlock
         label="Masterful Design"
         firstColor="black"
