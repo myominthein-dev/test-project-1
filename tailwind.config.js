@@ -4,6 +4,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        boxShadow : {
+          'inner-custom' : 'inset 5px 5px 5px 0px #FFFFFF'
+        }
+        ,
+        dropShadow : {
+          'custom': '0px 2px 2px #000000',
+        }
+        ,
         futura: ["Futura", "sans-serif"],
         lato: ["Lato", "sans-serif"],
       },
