@@ -32,7 +32,7 @@ const cards = [
 
 const TestimonialSection = () => {
   return (
-    <section className="max-w-[1440px] h-[456px] bg-red-200 mt-16 w-[355px] flex flex-col items-center justify-evenly sm:w-full  mx-auto   ">
+    <section className="max-w-[1440px] h-[456px]  mt-16 w-[355px] flex flex-col items-center justify-evenly sm:w-full  mx-auto   ">
       <div className="w-full h-[184px] ">
         <div className="sm:text-center h-full">
           <HeaderBlock
