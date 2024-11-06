@@ -32,9 +32,9 @@ const cards = [
 
 const TestimonialSection = () => {
   return (
-    <section className="max-w-[1440px] flex flex-col items-center justify-evenly w-11/12 mx-auto   h-[763px]">
+    <section className="max-w-[1440px] h-[456px] mt-16 flex flex-col items-center justify-evenly w-11/12 mx-auto   ">
       <div className="w-full h-[184px] ">
-        <div className="text-center h-full">
+        <div className="md:text-center h-full">
           <HeaderBlock
             secondColor={"blue"}
             firstHeadline={"Crafting Seamless"}
@@ -46,16 +46,14 @@ const TestimonialSection = () => {
           </HeaderBlock>
         </div>
       </div>
-      <div className="w-[1211px] flex justify-between  h-[211px] ">
-        {cards.map((c) => (
-          <FeatureCard key={c.id} info={c} />
-        ))}
+      <div className="max-w-[1211px] grid gap-3 md:grid-cols-2 lg:grid-cols-3 h-[211px] ">
+        <FeatureCard className={'md:col-span-1'} info={cards[0]} />
+        <FeatureCard className={'md:col-span-1 hidden md:block'} info={cards[1]} />
+        <FeatureCard className={'md:col-span-1 hidden lg:block'} info={cards[2]} />
       </div>
       <div className=" w-full flex items-center justify-center ">
         <div className="flex">
-          <DotIcon
-            className="-mr-4 text-[#6596A1]"
-          />
+          <DotIcon className="-mr-4 text-[#6596A1]" />
           <DotIcon className="-mr-4 text-[#C4C4C4]" />
           <DotIcon className="text-[#C4C4C4]" />
         </div>
