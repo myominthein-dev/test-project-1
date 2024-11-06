@@ -24,13 +24,11 @@ const HeaderComponent = () => {
       }
     >
       <header className="flex h-[32px] relative w-[355px] md:w-full  md:max-w-[770px]    lg:max-w-[1412px] justify-between">
-        <nav>
+        <nav className="cursor-pointer" onClick={()=>navHandler("/")}>
           <img src={vactor} />
         </nav>
 
-        {/* <button onClick={toggleSidebar} className="md:hidden">
-            <X size={24} />
-          </button> */}
+       
 
         <button
           onClick={toggleSidebar}
@@ -54,7 +52,7 @@ const HeaderComponent = () => {
           className={`md:w-[250px] text-md  bg-white rounded-md w-full transition-all md:relative md:top-0 duration-300 ease-in-out top-14 p-3 md:p-0  absolute h-auto   md:flex justify-between md:text-[14px] leading-[22px] font-lato md:h-[22px] ${
             isSidebarOpen
               ? " opacity-100  translate-y-0  h-auto"
-              : "max-h-0 opacity-0 z-0 pointer-events-none  -translate-y-full md:translate-y-0 md:max-h-none md:opacity-100"
+              : "max-h-0 opacity-0 z-0 pointer-events-none md:pointer-events-auto  -translate-y-full md:translate-y-0 md:max-h-none md:opacity-100"
           }`}
         >
           <span className="cursor-pointer  " onClick={() => navHandler("/")}>
