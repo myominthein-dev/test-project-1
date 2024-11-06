@@ -23,7 +23,7 @@ const cards = [
     imgSrc: cardImgTwo,
     headline: "Gestalt psychology in UI/UX design and beyond.",
     paragraph:
-      "Bring to the table win-win strategies to proactive domination. At the end of the day, going forward.",
+      "Bring to the table win-win strategies to proactive domination. At the end of the day, going forward and approaches to win win situation.",
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const cards = [
     imgSrc: cardImgThree,
     headline: "Faster ways to reach your customers and their needs.",
     paragraph:
-      "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test override the digital divide.",
+      "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test override the digital divide and dried.",
   },
 ];
 

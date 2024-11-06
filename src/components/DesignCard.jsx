@@ -2,7 +2,7 @@ import { HiArrowRight } from "react-icons/hi";
 
 const DesignCard = ({ img, tag, date, headline, paragraph }) => {
   return (
-    <div className="flex flex-col w-[352px] md:w-[370px] lg:w-[384px] mx-auto rounded-[20px] shadow-xl">
+    <div className="flex flex-col w-[352px] md:w-[370px] lg:w-[340px] xl:w-[404px] mx-auto rounded-[20px] shadow-xl">
       <div className="w-full ">
         <img src={img} className="w-2/3 mx-auto" alt="" />
       </div>
