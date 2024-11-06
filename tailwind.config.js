@@ -16,6 +16,7 @@ export default {
         lato: ["Lato", "sans-serif"],
       },
       colors: {
+        lightBlue: "#f0f5f6",
         blue: {
           50: "#e0eaec", // 10%
           100: "#ccdce0", // 20%
@@ -32,6 +33,7 @@ export default {
         lightBlue: "#f0f5f6",
         lightGrey: "#c4c4c4",
         secondaryGrey: "#7f7d7d",
+        secondaryBlue: "#6596a1",
         black: {
           PRIMARY: "#223236",
           50: "#d0d2d2", // 10%
