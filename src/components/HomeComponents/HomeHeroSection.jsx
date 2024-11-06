@@ -6,25 +6,25 @@ import plantAndChair from "../../assets/HomeAssets/armchair-and-plant.png";
 const HomeHeroSection = () => {
   return (
     <Container>
-      <div className="h-[939px] flex flex-col justify-between bg-gradient-to-b from-[#CCDCE0] to-[#FFFFFF]">
-        <div className="w-[640px] h-[475px] flex items-center mx-auto  ">
-          <div className="h-[315px] flex flex-col justify-between relative w-full my-auto  ">
-            <div className="h-[243px]  flex flex-col justify-between ">
-              <h2 className="text-[#6596A1] text-[22px] text-center leading-[22px]  font-futura">
+      <div className="lg:h-[939px]  md:h-[566.64px] h-[403px] lg:w-full flex flex-col bg-gradient-to-b from-[#CCDCE0] to-[#FFFFFF]">
+        <div className="md:w-[640px] w-[355px]  lg:h-[475px] flex items-center mx-auto  ">
+          <div className="md:h-[315px]  pt-3  h-[283px]  flex flex-col lg:justify-between justify-around  md:items-center relative w-full md:my-auto  ">
+            <div className="lg:h-[243px] md:h-[190px]  gap-3  flex  md:justify-around flex-col lg:justify-between md:item-center">
+              <h2 className="text-[#6596A1] text-[16px] md:text-[16px] md:leading-[24px] lg:text-[22px] text-left md:text-center lg:leading-[22px]  font-futura">
                 The Art of UI Design
               </h2>
-              <p className="font-lato tracking-wide  relative px-3 -left-32   text-center text-[61px] w-[885px] h-[134px] font-extrabold leading-[67px] ">
+              <p className="font-futura text-[33px] pr-2   leading-[33.22px] md:mx-auto md:tracking-wide  relative md:px-3  w-[353px]   md:text-center md:text-[30px] lg:text-[61px] md:w-[435px] md:h-[64px] lg:w-[885px] lg:h-[134px] font-extrabold lg:leading-[67px] md:leading-[32px] text-left ">
                 Come for the <span className="text-[#6596A1]">features</span> of
                 it. Stay for best ever help.
               </p>
 
-              <p className="font-lato  text-[#7F7D7D] mx-auto  text-[20px] leading-[28px] font-semibold w-[521px] h-[56px] text-center">
+              <p className="font-lato pr-3 align-middle  text-[14px] leading-[16.8px] w-[355px]  text-[#7F7D7D] md:mx-auto  lg:text-[20px] md:w-[414px] md:h-[48px] md:text-[16px] md:leading-[24px] lg:leading-[28px] font-semibold lg:w-[521px] lg:h-[56px] text-left md:text-center">
                 We’ve been told it is possible to revolutionize the payment
                 industry. We have not reinvented the wheel, we decide
               </p>
             </div>
 
-            <div className="  w-[286px] flex justify-between items-center mx-auto h-[46px]">
+            <div className="  w-[286px]  me-auto flex justify-between md:items-center md:mx-auto h-[46px]">
               <button className="w-[122px] h-[46px] rounded-[8px] px-[5px] border border-[#6596A1] py-[8px] text-[#6596A1] text-[16px] leading-[22px] -tracking-tighter">
                 Learn More
               </button>
@@ -35,11 +35,11 @@ const HomeHeroSection = () => {
           </div>
         </div>
 
-        <div className="w-[806.03px] relative flex  mx-auto  h-[436px]">
-          <div className=" relative left-20 top-10 z-20 w-[384px] h-[294.23px] ">
+        <div className="lg:w-[806.03px] w-[352px] h-[190px] md:w-[422.9px] md:h-[228.64px] relative flex  mx-auto  lg:h-[436px]">
+          <div className=" relative w-[167px] h-[128px] left-20 top-10 z-20 md:w-[201.38px] md:h-[154.3px] lg:w-[384px] lg:h-[294.23px] ">
             <img className="h-full w-full object-cover" src={plantAndChair} />
           </div>
-          <div className="border z-30 w-[592px] h-[436px] border-green-400">
+          <div className=" z-30 w-[258.53px] h-[190.41px] lg:w-[592px] lg:h-[436px] md:w-[310.45px] md:h-[228.64px]">
             <img className="h-full object-cover w-full" src={twoPeople} />
           </div>
         </div>
