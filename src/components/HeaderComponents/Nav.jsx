@@ -3,7 +3,7 @@ import React from 'react'
 const Nav = ({text,path,origin}) => {
   
   return (
-    <nav className={`${path == origin? 'text-[#6596A1] font-bold' : 'text-[#7F7D7D] font-semibold'}`}>{text}</nav>
+    <nav className={` 'h-10 p-2 md:h-0 md:p-0  items-center rounded-md   flex' ${path == origin? 'md:text-[#6596A1] bg-[#6596A1] text-white md:bg-white font-bold' : 'text-[#7F7D7D] font-semibold'}`}>{text}</nav>
   )
 }
 
