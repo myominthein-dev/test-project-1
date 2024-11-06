@@ -12,7 +12,7 @@ const textList = [
 const NextLevelInnovation = () => {
   return (
     <Container className="max-w-[1440px]  ">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-16 lg:p-16 flex flex-col md:flex-row md:justify-between gap-8">
+      <div className="w-[355px] sm:w-full mx-auto  md:px-16 lg:p-16 flex flex-col md:flex-row md:justify-between gap-8">
         <div className="w-full md:w-[371px] lg:w-[500px]">
           <Badge label="Next-Level Innovation" />
           <h2 className="font-futura font-bold text-2xl md:text-[25px] lg:text-[31px] text-black-PRIMARY my-1">

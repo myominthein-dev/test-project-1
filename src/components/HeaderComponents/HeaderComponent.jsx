@@ -23,7 +23,7 @@ const HeaderComponent = () => {
         "flex bg-white  flex-col top-0 z-50  sticky px-3 items-center  h-[72px] justify-center"
       }
     >
-      <header className="flex h-[32px] relative w-[355px] md:w-full  md:max-w-[770px]    lg:max-w-[1412px] justify-between">
+      <header className="flex h-[32px] relative w-[355px] sm:w-full  md:max-w-[770px]    lg:max-w-[1412px] justify-between">
         <nav className="cursor-pointer" onClick={()=>navHandler("/")}>
           <img src={vactor} />
         </nav>

@@ -32,9 +32,9 @@ const cards = [
 
 const TestimonialSection = () => {
   return (
-    <section className="max-w-[1440px] h-[456px] mt-16 flex flex-col items-center justify-evenly w-11/12 mx-auto   ">
+    <section className="max-w-[1440px] h-[456px] bg-red-200 mt-16 w-[355px] flex flex-col items-center justify-evenly sm:w-full  mx-auto   ">
       <div className="w-full h-[184px] ">
-        <div className="md:text-center h-full">
+        <div className="sm:text-center h-full">
           <HeaderBlock
             secondColor={"blue"}
             firstHeadline={"Crafting Seamless"}
@@ -46,10 +46,10 @@ const TestimonialSection = () => {
           </HeaderBlock>
         </div>
       </div>
-      <div className="max-w-[1211px] grid gap-3 md:grid-cols-2 lg:grid-cols-3 h-[211px] ">
+      <div className="max-w-[1211px] grid gap-3 md:grid-cols-2 xl:grid-cols-3 h-[211px] ">
         <FeatureCard className={'md:col-span-1'} info={cards[0]} />
-        <FeatureCard className={'md:col-span-1 hidden md:block'} info={cards[1]} />
-        <FeatureCard className={'md:col-span-1 hidden lg:block'} info={cards[2]} />
+        <FeatureCard className={'md:col-span-1 hidden lg:block'} info={cards[1]} />
+        <FeatureCard className={'md:col-span-1 hidden xl:block'} info={cards[2]} />
       </div>
       <div className=" w-full flex items-center justify-center ">
         <div className="flex">
