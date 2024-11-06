@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set your development branch name here
-DEV_BRANCH="dev-zarmani"
+DEV_BRANCH="dev-aungkaungsan"
 
 # Checkout the main branch and pull the latest changes
 echo "Switching to the main branch..."
