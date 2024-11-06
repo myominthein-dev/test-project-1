@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderBlock from "../HeaderBlock";
 import happyWoman from "../../assets/HomeAssets/happy-woman-making-heart-shape.png";
-import yellowMan from "../../assets/HomeAssets/yellow-young-happy-man.png";
+import yellowMan from "../../assets/HomeAssets/young-man-drawing-lines.png";
 import blueFemaleStudent from "../../assets/HomeAssets/blue-female-student.png";
 import FeatureCard from "./FeatureCard";
 import { CircleIcon, DotIcon, EllipsisIcon } from "lucide-react";
@@ -53,9 +53,7 @@ const TestimonialSection = () => {
       </div>
       <div className=" w-full flex items-center justify-center ">
         <div className="flex">
-          <DotIcon
-            className="-mr-4 text-[#6596A1]"
-          />
+          <DotIcon className="-mr-4 text-[#6596A1]" />
           <DotIcon className="-mr-4 text-[#C4C4C4]" />
           <DotIcon className="text-[#C4C4C4]" />
         </div>
