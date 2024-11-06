@@ -4,10 +4,19 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        boxShadow : {
+          'inner-custom' : 'inset 5px 5px 5px 0px #FFFFFF'
+        }
+        ,
+        dropShadow : {
+          'custom': '0px 2px 2px #000000',
+        }
+        ,
         futura: ["Futura", "sans-serif"],
         lato: ["Lato", "sans-serif"],
       },
       colors: {
+        lightBlue: "#f0f5f6",
         blue: {
           50: "#e0eaec", // 10%
           100: "#ccdce0", // 20%
@@ -21,8 +30,10 @@ export default {
           900: "#223236", // 90%
           1000: "#141e20", // 100%
         },
+        lightBlue: "#f0f5f6",
         lightGrey: "#c4c4c4",
         secondaryGrey: "#7f7d7d",
+        secondaryBlue: "#6596a1",
         black: {
           PRIMARY: "#223236",
           50: "#d0d2d2", // 10%
