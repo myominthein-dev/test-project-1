@@ -4,6 +4,8 @@ import vactor from "../../assets/logo.svg";
 import { useLocation, useNavigate } from "react-router-dom";
 import Nav from "./Nav";
 import { Menu, X } from "lucide-react";
+import { motion } from "framer-motion";
+
 const HeaderComponent = () => {
   const location = useLocation();
   const path = location.pathname;
@@ -23,12 +25,15 @@ const HeaderComponent = () => {
         "flex bg-white  flex-col top-0 z-50  sticky px-3 items-center  h-[72px] justify-center"
       }
     >
-      <Container className="flex h-[32px] relative w-[355px] sm:w-full  md:max-w-[770px]    lg:max-w-[1412px] justify-between">
-        <nav className="cursor-pointer" onClick={()=>navHandler("/")}>
+      <motion.header
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+        className="flex h-[32px] relative w-[355px] sm:w-full  md:max-w-[770px]    lg:max-w-[1412px] justify-between"
+      >
+        <nav className="cursor-pointer" onClick={() => navHandler("/")}>
           <img src={vactor} />
         </nav>
-
-       
 
         <button
           onClick={toggleSidebar}
@@ -71,8 +76,8 @@ const HeaderComponent = () => {
             <Nav path={path} origin="/contact" text={"Contact"} />
           </span>
         </nav>
-      </Container>
-    </header>
+      </motion.header>
+    </Container>
   );
 };
 

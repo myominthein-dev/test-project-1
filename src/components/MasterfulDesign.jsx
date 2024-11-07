@@ -1,6 +1,12 @@
 import Container from "./Container";
 import HeaderBlock from "./HeaderBlock";
 import womanImg from "../assets/HomeAssets/boba-woman-with-magnifying-glass-on-a-search 1.svg";
+import { motion } from "framer-motion";
+
+const itemVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: { opacity: 1, scale: 1 },
+};
 
 const check = [
   {
@@ -38,11 +44,37 @@ const MasterfulDesign = () => {
       </HeaderBlock>
       <div className="w-full md:w-[764px] max-w-[1216px] mx-auto flex flex-col md:flex-row px-5 md:px-0 md:py-[50px] lg:py-0 lg:pt-[60px] lg:gap-12 items-center">
         <div className="w-full md:w-1/2 lg:w-2/3 mx-auto">
-          <img src={womanImg} className=" " alt="girl sitting" />
+          <motion.img
+            src={womanImg}
+            alt="girl sitting"
+            className=""
+            animate={{
+              x: [0, 20, 0, -20], // Horizontal floating motion
+              y: [0, -60, -20], // Vertical floating motion
+              rotate: [0, 7, 0, -7], // Rotation motion
+            }}
+            transition={{
+              duration: 4, // Duration of the full animation loop
+              repeat: Infinity, // Loop the animation infinitely
+              repeatType: "mirror", // Reverses on each iteration
+              ease: "easeInOut", // Smooth easing
+              // Make the animation smoother
+              stiffness: 1000,
+              damping: 50,
+            }}
+          />
         </div>
         <div className="w-full md:w-1/2 lg:w-[516px]">
-          {check.map((item) => (
-            <div className="flex mb-5 " key={item.id}>
+          {check.map((item, index) => (
+            <motion.div
+              key={item.id}
+              className="flex mb-5"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.2 }} // Adds stagger effect
+              variants={itemVariants}
+            >
               <div className="font-lato text-xs border border-black-PRIMARY rounded-full size-6 p-2 flex justify-center items-center">
                 {item.id}
               </div>
@@ -54,7 +86,7 @@ const MasterfulDesign = () => {
                   {item.paragraph}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
