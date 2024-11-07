@@ -5,14 +5,13 @@ import {
   ContactUsHeroSection,
   ContactUsOffice,
 } from "../components/ContactComponents";
+import Aos from "aos";
 
 
 
 const ContactPage = () => {
   useEffect(() => {
-    import('aos').then((AOS) => {
-      AOS.init()
-    })
+   Aos.init();
   }, []);
   return (
     <section className="mx-auto w-[1440px] ">
