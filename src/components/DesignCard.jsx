@@ -1,3 +1,4 @@
+import { Tilt } from "@jdion/tilt-react";
 import { HiArrowRight } from "react-icons/hi";
 
 const DesignCard = ({ img, tag, date, headline, paragraph }) => {
@@ -17,8 +18,8 @@ const DesignCard = ({ img, tag, date, headline, paragraph }) => {
           {headline}
         </h4>
         <p className="font-lato text-secondaryGrey text-balance">{paragraph}</p>
-        <button className="flex gap-3 items-center mt-4 text-blue-PRIMARY">
-          Link <HiArrowRight />{" "}
+        <button className="flex group gap-3 items-center mt-4 text-blue-PRIMARY border-b duration-150 hover:border-b-blue-PRIMARY">
+          Link <HiArrowRight className="group-hover:-rotate-45 duration-150" />{" "}
         </button>
       </div>
     </div>
