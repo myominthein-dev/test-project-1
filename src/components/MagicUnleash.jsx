@@ -6,6 +6,13 @@ import cardImgOne from "../assets/HomeAssets/gears-and-magnifying-glass.png";
 import cardImgTwo from "../assets/HomeAssets/columns-charts.png";
 import cardImgThree from "../assets/HomeAssets/laptop-and-rocket.png";
 
+import { motion } from "framer-motion";
+
+const cardVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: { opacity: 1, scale: 1 },
+};
+
 const cards = [
   {
     id: 1,
@@ -50,16 +57,25 @@ const MagicUnleash = () => {
         industry. Lorem Ipsum has been the industry's
       </HeaderBlock>
       <div className="w-full md:w-[764px] lg:w-full p-0 max-w-[1216px] mt-8 mx-auto">
-        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cards.map((card) => (
-            <DesignCard
+            <motion.div
               key={card.id}
-              img={card.imgSrc}
-              tag={card.tag}
-              date={card.date}
-              headline={card.headline}
-              paragraph={card.paragraph}
-            />
+              className="w-full"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              variants={cardVariants}
+            >
+              <DesignCard
+                img={card.imgSrc}
+                tag={card.tag}
+                date={card.date}
+                headline={card.headline}
+                paragraph={card.paragraph}
+              />
+            </motion.div>
           ))}
         </div>
       </div>
