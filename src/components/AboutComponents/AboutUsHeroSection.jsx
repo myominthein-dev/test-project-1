@@ -4,7 +4,7 @@ import Container from "../Container";
 
 const AboutUsHeroSection = () => {
   return (
-    <section className=" bg-custom-gradient  py-[80px]">
+    <section className="   py-[80px]">
       <Container className={"py-5 px-5  "}>
         <div className=" flex justify-between flex-col items-center gap-10">
           <div className=" flex  lg:w-[864px] md:w-[764px] gap-2.5 mx-auto flex-col justify-center md:items-center md:text-center text-left  ">
