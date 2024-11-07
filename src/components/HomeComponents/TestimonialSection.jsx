@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderBlock from "../HeaderBlock";
 import happyWoman from "../../assets/HomeAssets/happy-woman-making-heart-shape.png";
-import yellowMan from "../../assets/HomeAssets/yellow-young-happy-man.png";
+import yellowMan from "../../assets/HomeAssets/young-man-drawing-lines.png";
 import blueFemaleStudent from "../../assets/HomeAssets/blue-female-student.png";
 import FeatureCard from "./FeatureCard";
 import { CircleIcon, DotIcon, EllipsisIcon } from "lucide-react";
