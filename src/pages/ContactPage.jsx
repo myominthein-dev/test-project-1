@@ -5,7 +5,8 @@ import {
   ContactUsOffice,
 } from "../components/ContactComponents";
 //import AOS from "aos";
-import "aos/dist/aos.css";
+//import "aos/dist/aos.css";
+import "../../node_modules/aos/dist/aos.css"
 import Aos from "aos";
 const ContactPage = () => {
   useEffect(() => {

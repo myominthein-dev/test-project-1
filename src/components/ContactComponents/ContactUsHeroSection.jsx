@@ -20,10 +20,10 @@ const ContactUsHeroSection = () => {
             Contact us
           </p>
           <h1 className=" first-line:text-black-900 text-[#6596A1] text-[61px] font-[700] leading-[67px] text-center">
-            <h1>
+            <div>
               {text}{" "}
               <Cursor cursorStyle={isType && ">"} cursorColor="#6596A1" />
-            </h1>
+            </div>
           </h1>
           <span className=" text-center text-[20px] font-[500] leading-[28px] w-[521px] text-[#7F7D7D]">
             The only corporate card and spent management platform designed to

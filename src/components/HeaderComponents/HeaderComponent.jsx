@@ -48,7 +48,7 @@ const HeaderComponent = () => {
           />
         </button>
 
-        <navbar
+        <nav
           className={`md:w-[250px] text-md  bg-white rounded-md w-full transition-all md:relative md:top-0 duration-300 ease-in-out top-14 p-3 md:p-0  absolute h-auto   md:flex justify-between md:text-[14px] leading-[22px] font-lato md:h-[22px] ${
             isSidebarOpen
               ? " opacity-100  translate-y-0  h-auto"
@@ -70,7 +70,7 @@ const HeaderComponent = () => {
           >
             <Nav path={path} origin="/contact" text={"Contact"} />
           </span>
-        </navbar>
+        </nav>
       </header>
     </Container>
   );
