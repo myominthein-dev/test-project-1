@@ -8,5 +8,8 @@ export default defineConfig({
     rollupOptions: {
       external: ['aos','framer-motion','@jdion/tilt-react']
     }
+  },
+  optimizeDeps: {
+    include: ["framer-motion","aos","@jdion/tilt-react"]
   }
 })
