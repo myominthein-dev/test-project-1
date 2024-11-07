@@ -12,11 +12,10 @@ export default defineConfig({
   optimizeDeps: {
     include: ['framer-motion', 'aos', '@jdion/tilt-react']
   },
-  resolve: {
-    alias: {
-      'framer-motion': 'node_modules/framer-motion/dist/framer-motion.esm.js',
-      'aos': 'node_modules/aos/dist/aos.js',
-      '@jdion/tilt-react': 'node_modules/@jdion/tilt-react/dist/index.esm.js'
-    }
+
+  build: {
+    commonjsOptions: {
+      transformMixedEsModules: true,
+    },
   }
 });
