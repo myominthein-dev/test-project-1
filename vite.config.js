@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['aos']
+      external: ['aos','framer-motion','@jdion/tilt-react']
     }
   }
 })

@@ -77,7 +77,7 @@ const HeaderComponent = () => {
           </span>
         </nav>
       </motion.header>
-    </Container>
+    </header>
   );
 };
 
