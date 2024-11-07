@@ -11,7 +11,7 @@ const ContactUsHeroSection = () => {
     delaySpeed: 700,
   });
   return (
-    <div className=" w-full h-[909px]  bg-gradient-to-t from-[#FFFFFF] via-[#E6EAEB] to-[#CCDCE0]">
+    <div className=" w-full h-[909px]  ">
       <div className=" flex flex-col justify-evenly h-full items-center ">
         {/* Paragraphs */}
         <div className="  w-[864px] flex flex-col justify-center items-center gap-2">

@@ -20,7 +20,7 @@ const HeaderComponent = () => {
   };
 
   return (
-    <Container
+    <header
       className={
         "flex bg-white  flex-col top-0 z-50  sticky px-3 items-center  h-[72px] justify-center"
       }
@@ -77,7 +77,7 @@ const HeaderComponent = () => {
           </span>
         </nav>
       </motion.header>
-    </Container>
+    </header>
   );
 };
 

@@ -11,7 +11,7 @@ import Action from "../components/Action";
 
 const HomePage = () => {
   return (
-    <section>
+    <section className="">
       <HomeHeroSection/>
       <TestimonialSection/>
       <MasterfulDesign />
