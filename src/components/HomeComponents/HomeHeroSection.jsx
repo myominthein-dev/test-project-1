@@ -3,6 +3,8 @@ import Container from "../Container";
 import { ArrowRightIcon } from "lucide-react";
 import twoPeople from "../../assets/HomeAssets/boba-young-man-discussion.png";
 import plantAndChair from "../../assets/HomeAssets/armchair-and-plant.png";
+import { motion } from "framer-motion";
+
 const HomeHeroSection = () => {
   return (
     <Container>
@@ -25,23 +27,36 @@ const HomeHeroSection = () => {
             </div>
 
             <div className="  w-[286px]  me-auto flex justify-between md:items-center sm:mx-auto h-[46px]">
-              <button className="w-[122px] h-[46px] rounded-[8px] px-[5px] border border-[#6596A1] py-[8px] text-[#6596A1] text-[16px] leading-[22px] -tracking-tighter">
+              <button className="w-[122px] h-[46px] rounded-[8px] px-[5px] border border-blue-PRIMARY py-[8px] text-[#6596A1] text-[16px] leading-[22px] -tracking-tighter active:scale-95 duration-200">
                 Learn More
               </button>
-              <button className="w-[148px] flex items-center justify-center   bg-[#6596A1] h-[46px] rounded-[8px] border border-[#6596A1] py-[8px] text-white text-[16px] leading-[22px] -tracking-tighter">
-                <span>Get Started</span> <ArrowRightIcon className="size-5" />
+              <button className="w-[148px] group active:scale-95 duration-200 flex items-center justify-center  bg-blue-PRIMARY hover:bg-[#438fa0] h-[46px] rounded-[8px] border border-blue-PRIMARY py-[8px] text-white text-[16px] leading-[22px] -tracking-tighter">
+                <span>Get Started</span>{" "}
+                <ArrowRightIcon className="size-5 group-hover:translate-x-1 duration-200" />
               </button>
             </div>
           </div>
         </div>
 
         <div className="lg:w-[806.03px] w-[352px] h-[190px] md:w-[422.9px] md:h-[228.64px] relative flex  mx-auto  lg:h-[436px]">
-          <div className=" relative w-[167px] h-[128px] left-20 top-10 z-20 md:w-[201.38px] md:h-[154.3px] lg:w-[384px] lg:h-[294.23px] ">
+          <motion.div
+            initial={{ x: -300, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className=" relative w-[167px] h-[128px] left-20 top-10 z-20 md:w-[201.38px] md:h-[154.3px] lg:w-[384px] lg:h-[294.23px] "
+          >
             <img className="h-full w-full object-cover" src={plantAndChair} />
-          </div>
-          <div className=" z-30 w-[258.53px] h-[190.41px] lg:w-[592px] lg:h-[436px] md:w-[310.45px] md:h-[228.64px]">
+          </motion.div>
+          <motion.div
+            initial={{ x: 300, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className=" z-30 w-[258.53px] h-[190.41px] lg:w-[592px] lg:h-[436px] md:w-[310.45px] md:h-[228.64px]"
+          >
             <img className="h-full object-cover w-full" src={twoPeople} />
-          </div>
+          </motion.div>
         </div>
       </div>
     </Container>
