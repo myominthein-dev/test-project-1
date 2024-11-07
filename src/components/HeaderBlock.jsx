@@ -12,7 +12,7 @@ const HeaderBlock = ({
   return (
     <div className="mx-auto w-[355px] md:w-[655px] lg:w-full sm:text-center  max-w-[1100px]">
       <Badge label={label} />
-      <h2 className="text-xl md:text-2xl lg:text-[50px] font-futura font-bold my-3 lg:my-5 flex gap-3 justify-center">
+      <h2 className="text-xl md:text-2xl lg:text-[50px] font-futura font-bold my-3 lg:my-5 flex gap-3 md:justify-center">
         <motion.span
           className={`text-${firstColor}-PRIMARY`}
           whileInView={{ x: 0, opacity: 1 }}

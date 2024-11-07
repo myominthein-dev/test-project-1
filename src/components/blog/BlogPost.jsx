@@ -5,6 +5,7 @@ import Article from "../../assets/BlogAssets/blog-post-article.png";
 import SaleBox from "../../assets/BlogAssets/sale-box.png";
 import DeskStop from "../../assets/BlogAssets/contents-in-desktop.png";
 import BlogIndicator from "./BlogIndicator";
+import { motion } from "framer-motion";
 
 const BlogPost = () => {
   const postLists = [
@@ -42,20 +43,31 @@ const BlogPost = () => {
     },
   ];
   return (
-    <section>
+    <section className="px-5 md:px-0">
       <div className="flex flex-col gap-10 md:gap-20 py-10 md:py-20 max-w-[1200px] mx-auto px-0 md:px-5">
         <h2 className="text-2xl md:text-3xl font-futura font-bold text-black-PRIMARY">
           New Blogs For You
         </h2>
-        <div className=" grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
-          {postLists.map((post) => (
-            <BlogPostCard
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
+          {postLists.map((post, index) => (
+            <motion.div
               key={post.id}
-              imgSrc={post.imgSrc}
-              date={post.date}
-              cardTitle={post.cardTitle}
-              cardParagraph={post.cardParagraph}
-            />
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.5,
+                ease: "easeOut",
+                delay: index * 0.2, // Add delay based on index for staggered effect
+              }}
+              viewport={{ once: true }}
+            >
+              <BlogPostCard
+                imgSrc={post.imgSrc}
+                date={post.date}
+                cardTitle={post.cardTitle}
+                cardParagraph={post.cardParagraph}
+              />
+            </motion.div>
           ))}
         </div>
         <BlogIndicator />
