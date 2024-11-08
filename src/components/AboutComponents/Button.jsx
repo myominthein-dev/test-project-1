@@ -5,7 +5,7 @@ const Button = ({ label, className, handler }) => {
     <div>
       <button
         onClick={handler}
-        className={`border font-lato gap-[6px] text-white border-blue-PRIMARY rounded-md  py-2 px-4 bg-blue-PRIMARY ${className}`}
+        className={`border font-lato gap-[6px] text-white border-blue-PRIMARY rounded-md  py-2 px-4 bg-blue-PRIMARY -tracking-tight ${className}`}
       >
         {label}
       </button>

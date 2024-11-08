@@ -9,11 +9,11 @@ const TransformBusiness = () => {
       <Container className={"py-5 px-5 flex justify-center"}>
         <div className=" flex md:flex-row flex-col gap-[10px] lg:w-[1220px] md:w-[764px] w-[352px] md:gap-[20px]  justify-between  text-left items-center ">
           <div className="flex flex-col  gap-2.5 lg:w-[491px] md:w-[372px] w-[352px] ">
-            <h1 className=" font-futura font-bold text-2xl   md:text-[22px] text-[20px] lg:text-[31px]  my-1">
+            <h1 className=" font-futura font-bold text-2xl   md:text-[22px] text-[20px] lg:text-[31px]  my-1 leading-[41.2px] sm:tracking-wide">
               Transforming <br className="" /> business since 2014
             </h1>
             <div
-              className="  flex flex-col gap-2.5 text-[#7F7D7D]
+              className="  flex flex-col gap-2.5 text-[#7F7D7D] tracking-tight leading-[24px]
 "
             >
               <p className=" lg:w-[391px]  w-[334px] md:text-[16px] text-[14px]   ">
@@ -28,7 +28,7 @@ const TransformBusiness = () => {
             <Button className={"mt-5 items-end"} label={"Learn More"} />
           </div>
 
-          <div className=" flex items-center justify-center md:mt-0 mt-5 ">
+          <div className=" md:flex items-center justify-center md:mt-0 mt-5  hidden ">
             <img
               className="lg:w-[531px] md:w-[372px] w-[352px]"
               src={desktopComputer}
