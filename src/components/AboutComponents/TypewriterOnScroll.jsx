@@ -1,42 +1,46 @@
 // TypewriterOnScroll.js
 import React, { useState } from "react";
-import { Typewriter } from "react-simple-typewriter";
+import { Typewriter, useTypewriter } from "react-simple-typewriter";
 import { useInView } from "react-intersection-observer";
 
 const TypewriterOnScroll = () => {
   const [textVisible, setTextVisible] = useState(false);
-
-  // Set up intersection observer to track if the component is in view
+  const [showCursor, setShowCursor] = useState(true);
+  const [text, { isType }] = useTypewriter({
+    words: [" Technologies"],
+    loop: 1,
+    typeSpeed: 50,
+    delaySpeed: 700,
+  });
+  // Intersection Observer to trigger the typewriter when the element is in view
   const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger animation only once
-    threshold: 0.5, // Trigger when 50% of the element is in view
+    threshold: 0.5,
     onChange: (inView) => {
-      if (inView) setTextVisible(true); // Start animation when in view
+      if (inView) {
+        setTextVisible(false); // Reset visibility to re-trigger animation
+        setTimeout(() => setTextVisible(true), 100); // Delay to restart animation
+      }
     },
   });
 
   return (
-    <div
-      ref={ref}
-      style={{ minHeight: "100vh", padding: "20px", textAlign: "center" }}
-    >
-      <h1>Scroll down to see the typewriter effect!</h1>
-
+    <div ref={ref}>
       {textVisible && (
-        <h2>
+        <h1 className=" w-[343px] font-futura font-bold text-secondaryBlue lg:text-[50px] md:text-[30px] text-[25px] leading-[66.45px] tracking-wider text-center">
           <Typewriter
-            words={[
-              "Hello, World!",
-              "Welcome to the Scroll Typewriter Effect!",
-            ]}
+            words={[" Technologies"]}
             loop={1}
-            cursor
+            cursor={showCursor}
             cursorStyle="_"
             typeSpeed={70}
             deleteSpeed={50}
             delaySpeed={1000}
+            onType={() => setShowCursor(true)}
+            onDone={() => setShowCursor(false)}
+
+            // Hide cursor when typing stops
           />
-        </h2>
+        </h1>
       )}
     </div>
   );

@@ -1,12 +1,21 @@
 import React from "react";
 import Container from "../Container";
 import manWithCoffee from "../../assets/AboutAssets/man-with-coffee-at-work.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const AboutFounder = () => {
+  Aos.init();
   return (
     <section>
       <Container className={"py-5 px-5 flex justify-center"}>
         <div className=" lg:w-[1220px] bg-lightBlue rounded-[20px] flex  justify-between p-10 shadow-inner md:items-center md:flex-row flex-col-reverse  ">
-          <div className=" lg:w-[526px] lg:h-[195px] md:w-[363px] w-[352px] flex-col justify-between flex md:mt-0 mt-10">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            // data-aos-anchor-placement="center-bottom"
+            className=" lg:w-[526px] lg:h-[195px] md:w-[363px] w-[352px] flex-col justify-between flex md:mt-0 mt-10"
+          >
             <h1 className="font-futura font-bold text-2xl   md:text-[22px] text-[20px] lg:text-[31px] md:inline-block  hidden my-1 leading-[41.2px] tracking-wider">
               About the founder
             </h1>
@@ -18,7 +27,13 @@ const AboutFounder = () => {
 success”`}</p>
             </div>
           </div>
-          <div className="  flex  justify-end">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            // data-aos-anchor-placement="center-bottom"
+            className="  flex  justify-end"
+          >
             <img
               className=" md:w-[418px] w-[352px]  "
               src={manWithCoffee}
