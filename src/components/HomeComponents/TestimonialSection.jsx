@@ -65,7 +65,7 @@ const TestimonialSection = () => {
         </motion.div>
 
         <motion.div
-          className="md:col-span-1 hidden lg:block"
+          className="md:col-span-1 hidden md:block"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}

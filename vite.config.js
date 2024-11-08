@@ -7,11 +7,16 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['aos', 'framer-motion', '@jdion/tilt-react']
+      external: ['aos', 'framer-motion', '@jdion/tilt-react'],
+      output : {
+        manualChunks : undefined
+      }
     },
     commonjsOptions: {
       transformMixedEsModules: true,
-    }
+    },
+    outDir : 'dist',
+    assetsDir : 'assets'
   },
   optimizeDeps: {
     include: ['framer-motion', 'aos', '@jdion/tilt-react']
