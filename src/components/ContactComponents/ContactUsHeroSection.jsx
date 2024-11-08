@@ -2,6 +2,7 @@ import React from "react";
 import livingRoom from "../../assets/ContactAssets/living-room-couch.png";
 import threeColleages from "../../assets/ContactAssets/three-colleages-at-desk.png";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { motion } from "framer-motion";
 
 const ContactUsHeroSection = () => {
   const [text, { isType }] = useTypewriter({
@@ -14,18 +15,18 @@ const ContactUsHeroSection = () => {
     <div className=" w-full h-[909px]  ">
       <div className=" flex flex-col justify-evenly h-full items-center ">
         {/* Paragraphs */}
-        <div className="  w-[864px] flex flex-col justify-center items-center gap-2">
-          <p className=" text-[#6596A1] text-[22px] font-[500] leading-[22px]">
+        <div className=" w-full lg:w-[864px] flex flex-col justify-center items-center gap-2">
+          <p className=" text-[#6596A1] text-[18px] lg:text-[22px] font-[500] leading-[22px]">
             {" "}
             Contact us
           </p>
-          <h1 className=" first-line:text-black-900 text-[#6596A1] text-[61px] font-[700] leading-[67px] text-center">
+          <h1 className=" first-line:text-black-900 text-[#6596A1] text-[25px] lg:text-[61px] font-[700] leading-[30px] lg:leading-[67px] text-center">
             <div>
               {text}{" "}
               <Cursor cursorStyle={isType && ">"} cursorColor="#6596A1" />
             </div>
           </h1>
-          <span className=" text-center text-[20px] font-[500] leading-[28px] w-[521px] text-[#7F7D7D]">
+          <span className=" text-center text-[13px] lg:text-[20px] font-[500] leading-[28px] lg:w-[521px] text-[#7F7D7D]">
             The only corporate card and spent management platform designed to
             help you spend less.
           </span>
@@ -33,23 +34,22 @@ const ContactUsHeroSection = () => {
         {/* Image */}
         <div>
           <div className=" relative">
-            <img
-              data-aos="fade-right"
-              data-aos-duration="1500"
-              data-aos-delay="400"
-              data-aos-easing="ease-in-out"
-              className="  w-[537px] h-[406px] "
+            <motion.img
+              initial={{ x: -300, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
               src={livingRoom}
-              alt=""
+              className=" w-full  lg:w-[537px] h-[406px] "
             />
-            <img
-              data-aos="fade-left"
-              data-aos-duration="1500"
-              data-aos-delay="600"
-              data-aos-easing="ease-in-out"
-              className=" w-[592px] h-[436px] object-contain absolute top-6"
+
+            <motion.img
+              initial={{ x: 300, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
               src={threeColleages}
-              alt=""
+              className="w-full lg:w-[592px] h-[436px] object-contain absolute top-6"
             />
           </div>
         </div>

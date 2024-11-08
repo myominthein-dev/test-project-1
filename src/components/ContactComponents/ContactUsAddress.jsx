@@ -7,7 +7,7 @@ import ContactUsAddressChildren from "./ContactUsAddressChildren";
 const ContactUsAddress = () => {
   return (
     <div className=" w-full p-5 mt-20">
-      <div className=" flex justify-evenly items-center ">
+      <div className=" flex flex-col gap-3 lg:flex-row justify-evenly items-center ">
         <ContactUsAddressChildren
           image={locationMark}
           addressHeard={"Head office"}
