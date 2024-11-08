@@ -8,7 +8,16 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/"
     }
-  ]
+  ],
+  "rewrites" : [
+    {
+      "source" : "/(.*)",
+      "destination" : "/index.html"
+    }
+  ],
+  "buildCommand" : "npm run build",
+  "outputDirectory" : "dist",
+  "framework" : "vite"
 }
