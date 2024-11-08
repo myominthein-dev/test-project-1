@@ -14,7 +14,7 @@ const ContactPage = () => {
   //   AOS.init({})
   // }, []);
   return (
-    <section className="mx-auto w-[1440px] ">
+    <section className="mx-auto lg:w-[1440px] w-full  ">
       <ContactUsHeroSection />
       <ContactUsAddress />
       <ContactUsOffice />

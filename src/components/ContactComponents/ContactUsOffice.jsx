@@ -22,8 +22,8 @@ const ContactUsOffice = () => {
     <div className=" mt-20">
       <ContactUsOfficeHeard />
       <div className=" ">
-        <div className=" w-[1220px] h-[507px] flex justify-between items-center mt-10 mx-auto">
-          <div className=" flex flex-col justify-evenly items-center h-full">
+        <div className=" gap-5 lg:gap-0 lg:w-[1220px] lg:h-[507px] flex flex-col lg:flex-row justify-between items-center mt-10 mx-auto">
+          <div className=" flex gap-3 lg:gap-0 flex-col justify-evenly items-center lg:h-full">
             {officeAddress.map((office) => (
               <ContactUsOfficeText
                 key={office.id}
@@ -33,7 +33,7 @@ const ContactUsOffice = () => {
               />
             ))}
           </div>
-          <div className="w-[625px] h-full ">
+          <div className="lg:w-[625px] h-full  ">
             <ContactUsOfficeImg />
           </div>
         </div>

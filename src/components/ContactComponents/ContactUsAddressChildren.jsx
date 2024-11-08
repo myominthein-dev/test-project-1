@@ -4,7 +4,7 @@ const ContactUsAddressChildren = ({ image, addressHeard, addressText }) => {
   console.log(image, addressHeard, addressText);
 
   return (
-    <div className=" drop-shadow-md flex justify-around  items-center bg-[#F0F5F6] w-[386px] h-[181px] rounded-[20px]">
+    <div className=" drop-shadow-md flex justify-around  items-center bg-[#F0F5F6]  w-full lg:w-[386px] h-[181px] rounded-[20px]">
       <div className="w-[56px] h-[56px]">
         <img className="w-full h-full" src={image} alt="" />
       </div>
