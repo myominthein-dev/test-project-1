@@ -3,28 +3,20 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base : "/",
   plugins: [react()],
- 
-  server: {
-    hmr: {
-      overlay: false
-    }
-  },
   build: {
+    target: 'esnext',
     rollupOptions: {
-      external: ['aos', 'framer-motion', '@jdion/tilt-react'],
-      output : {
-        manualChunks : undefined
+      output: {
+        manualChunks: {
+          'framer-motion': ['framer-motion']
+        }
       }
-    },
-    commonjsOptions: {
-      transformMixedEsModules: true,
-    },
-    outDir : 'dist',
-    assetsDir : 'assets'
+    }
   },
   optimizeDeps: {
     include: ['framer-motion', 'aos', '@jdion/tilt-react']
   }
+
+
 });
