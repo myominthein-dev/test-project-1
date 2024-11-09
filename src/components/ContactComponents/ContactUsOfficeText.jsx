@@ -4,7 +4,7 @@ import mailIconSmall from "../../assets/ContactAssets/mail-icon-small.svg";
 
 const ContactUsOfficeText = ({ country, address, addressWidth }) => {
   return (
-    <div className="  p-8 rounded-[20px] text-[#7F7D7D] w-[387px] bg-[#F0F5F6]">
+    <div className="  p-8 rounded-[20px] text-[#7F7D7D]  w-[90%] bg-[#F0F5F6]">
       <h1 className=" my-3 text-[#6596A1] text-[25px] font-[700] leading-[33.22px]">
         {country}
       </h1>

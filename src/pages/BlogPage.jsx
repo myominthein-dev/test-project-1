@@ -6,7 +6,7 @@ const BlogPage = () => {
   return (
     <section>
       <Container>
-        <div className="bg-gradient-to-b from-[#CCDCE0] to-[#FFFFFF] py-20">
+        <div className=" py-20">
           <HeaderBlock
             label={"Our Blog"}
             firstColor="black-900"

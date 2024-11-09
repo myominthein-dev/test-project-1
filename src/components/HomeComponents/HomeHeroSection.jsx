@@ -21,7 +21,7 @@ const textVariants = {
 const HomeHeroSection = () => {
   return (
     <Container>
-      <div className="lg:h-[939px]  md:h-[566.64px] h-[403px] lg:w-full flex flex-col bg-gradient-to-b from-[#CCDCE0] to-[#FFFFFF]">
+      <div className="lg:h-[939px]  md:h-[566.64px] h-[403px] lg:w-full flex flex-col ">
         <div className="md:w-[640px] w-[355px] sm:w-full lg:h-[475px] flex items-center mx-auto  ">
           <div className="md:h-[315px]  pt-3  h-[283px]  flex flex-col lg:justify-between justify-around  sm:items-center relative w-full md:my-auto  ">
             <div className="lg:h-[243px] md:h-[190px] gap-3 flex md:justify-around flex-col lg:justify-between sm:item-center">
