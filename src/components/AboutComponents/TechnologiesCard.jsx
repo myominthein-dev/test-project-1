@@ -9,8 +9,9 @@ const TechnologiesCard = ({ icon, label, index }) => {
       <div
         data-aos="zoom-in"
         data-aos-delay={index * 600}
-        data-aos-duration="9500"
-        data-aos-anchor-placement="top-center"
+        data-aos-easing="ease-in-out-back"
+        data-aos-mirror="true"
+        data-aos-duration="1000"
         className="  inline-flex items-center  gap-[10px] justify-center h-[70px]   "
       >
         <img className=" opacity-50 size-[70px]" src={icon} alt="" />

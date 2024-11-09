@@ -4,6 +4,7 @@ import Container from "../Container";
 import {motion} from "framer-motion"
 
 const AboutUsHeroSection = () => {
+  Aos.init();
   return (
     <section className=" px-2 md:py-5 lg:py-14">
       <Container className={"py-5 px-5  "}>

@@ -14,7 +14,7 @@ const AboutFounder = () => {
           <div
            
             // data-aos-anchor-placement="center-bottom"
-            className=" lg:w-[526px] lg:h-[195px] md:w-[363px] w-[352px] flex-col justify-between flex md:mt-0 mt-10"
+            className=" lg:w-[526px] lg:h-[195px] md:w-[372px] flex-col justify-between flex md:mt-0 mt-10"
           >
             <motion.h1 initial={{ y: -200, opacity: 0 }}
            whileInView={{ y: 0, opacity: 1 }}
@@ -50,7 +50,13 @@ success”`}</motion.p>
               alt=""
             />
           </div>
-          <h1 className="font-futura font-bold text-2xl  text-[24px] md:hidden   my-1 leading-[41.2px] tracking-wider">
+          <h1
+            data-aos="fade-right"
+            data-aos-delay="100"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+            className="font-futura font-bold text-2xl  text-[24px] md:hidden   my-1 leading-[41.2px] tracking-wider"
+          >
             About the founder
           </h1>
         </div>

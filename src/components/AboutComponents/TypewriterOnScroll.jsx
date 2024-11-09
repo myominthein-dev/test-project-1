@@ -5,13 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 const TypewriterOnScroll = () => {
   const [textVisible, setTextVisible] = useState(false);
-  const [showCursor, setShowCursor] = useState(true);
-  const [text, { isType }] = useTypewriter({
-    words: [" Technologies"],
-    loop: 1,
-    typeSpeed: 50,
-    delaySpeed: 700,
-  });
+
   // Intersection Observer to trigger the typewriter when the element is in view
   const { ref, inView } = useInView({
     threshold: 0.5,
@@ -30,13 +24,11 @@ const TypewriterOnScroll = () => {
           <Typewriter
             words={[" Technologies"]}
             loop={1}
-            cursor={showCursor}
+            cursor={false}
             cursorStyle="_"
             typeSpeed={70}
             deleteSpeed={50}
             delaySpeed={1000}
-            onType={() => setShowCursor(true)}
-            onDone={() => setShowCursor(false)}
 
             // Hide cursor when typing stops
           />
