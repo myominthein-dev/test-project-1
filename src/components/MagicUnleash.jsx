@@ -57,11 +57,11 @@ const MagicUnleash = () => {
         industry. Lorem Ipsum has been the industry's
       </HeaderBlock>
       <div className="w-full md:w-[764px] lg:w-full p-0 max-w-[1216px] mt-8 mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex items-end  gap-4">
           {cards.map((card) => (
             <motion.div
               key={card.id}
-              className="w-full"
+              className={`w-full ${card.id == 2 && "hidden md:block"} ${card.id == 3 && "hidden xl:block"}`}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
