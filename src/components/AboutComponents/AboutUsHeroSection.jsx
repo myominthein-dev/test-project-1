@@ -2,6 +2,7 @@ import React from "react";
 import fourPeopleAtTable from "../../assets/AboutAssets/four-people-at-table.png";
 import Container from "../Container";
 import Aos from "aos";
+import "aos/dist/aos.css";
 
 const AboutUsHeroSection = () => {
   Aos.init();
