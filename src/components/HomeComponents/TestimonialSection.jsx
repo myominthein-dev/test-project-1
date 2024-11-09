@@ -1,11 +1,11 @@
-import React from "react";
-import HeaderBlock from "../HeaderBlock";
-import happyWoman from "../../assets/HomeAssets/happy-woman-making-heart-shape.png";
-import yellowMan from "../../assets/HomeAssets/young-man-drawing-lines.png";
-import blueFemaleStudent from "../../assets/HomeAssets/blue-female-student.png";
-import FeatureCard from "./FeatureCard";
-import { CircleIcon, DotIcon, EllipsisIcon } from "lucide-react";
-import { motion } from "framer-motion";
+import React from 'react';
+import HeaderBlock from '../HeaderBlock';
+import happyWoman from '../../assets/HomeAssets/happy-woman-making-heart-shape.png';
+import yellowMan from '../../assets/HomeAssets/young-man-drawing-lines.png';
+import blueFemaleStudent from '../../assets/HomeAssets/blue-female-student.png';
+import FeatureCard from './FeatureCard';
+import { CircleIcon, DotIcon, EllipsisIcon } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const popUpVariants = {
   hidden: { opacity: 0, scale: 0.8 },
@@ -16,23 +16,23 @@ const cards = [
   {
     id: 1,
     image: happyWoman,
-    btnLabel: "View All",
-    title: "Wireless",
-    paragraph: "Enim nec rhoncus volutpat nullam eros sapien pharetra.",
+    btnLabel: 'View All',
+    title: 'Wireless',
+    paragraph: 'Enim nec rhoncus volutpat nullam eros sapien pharetra.',
   },
   {
     id: 2,
     image: yellowMan,
-    btnLabel: "View All",
-    title: "Synergistic",
-    paragraph: "Neque ut integer nulla tellus semper amet id scelerisque eros.",
+    btnLabel: 'View All',
+    title: 'Synergistic',
+    paragraph: 'Neque ut integer nulla tellus semper amet id scelerisque eros.',
   },
   {
     id: 3,
     image: blueFemaleStudent,
-    btnLabel: "View All",
-    title: "Distributed",
-    paragraph: "Aliquet et cras nam sed mauris laoreet bibendum et.",
+    btnLabel: 'View All',
+    title: 'Distributed',
+    paragraph: 'Aliquet et cras nam sed mauris laoreet bibendum et.',
   },
 ];
 
@@ -42,17 +42,17 @@ const TestimonialSection = () => {
       <div className="w-full  h-[184px] ">
         <div className="sm:text-center h-full">
           <HeaderBlock
-            secondColor={"blue"}
-            firstHeadline={"Crafting Seamless"}
-            secondHeadline={" Experiences"}
-            label={"The Best UI"}
+            secondColor={'blue'}
+            firstHeadline={'Crafting Seamless'}
+            secondHeadline={' Experiences'}
+            label={'The Best UI'}
           >
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's
           </HeaderBlock>
         </div>
       </div>
-      <div className="max-w-[1211px] grid gap-3 md:grid-cols-2 xl:grid-cols-3 h-[211px] ">
+      <div className=" max-w-[1211px] grid gap-3 md:grid-cols-2 xl:grid-cols-3 h-[211px] ">
         <motion.div
           className="md:col-span-1"
           initial="hidden"
