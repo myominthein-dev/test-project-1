@@ -8,7 +8,7 @@ const BlogPage = () => {
     <section>
       <Container>
         <div className=" py-5 sm:py-7 lg:py-20">
-        <div className=" flex px-5  lg:w-[864px] md:w-[764px] gap-2.5 mx-auto flex-col justify-center md:items-center md:text-center text-left  ">
+        <div className=" flex  md:w-[640px] w-[355px]  lg:w-[864px] gap-2.5 mx-auto flex-col justify-center md:items-center md:text-center text-left  ">
             <motion.h1 initial={{ y: -200, opacity: 0 }}
            whileInView={{ y: 0, opacity: 1 }}
            transition={{ duration: 0.6 }}

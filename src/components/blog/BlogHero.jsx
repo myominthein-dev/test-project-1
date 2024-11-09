@@ -27,7 +27,7 @@ const BlogHero = () => {
       </div>
       <div className="flex flex-col gap-20 md:gap-0 md:justify-between items-center md:flex-row py-5 px-0 md:px-5">
         <div className="flex-1">
-          <div className="flex flex-col gap-5 items-start w-full md:w-[490px]">
+          <div className="flex flex-col w-[344px] gap-5 items-start  md:w-[450px]">
             <motion.h2 initial={{ y: -200, opacity: 0 }}
            whileInView={{ y: 0, opacity: 1 }}
            transition={{ duration: 0.6 }}
@@ -50,7 +50,7 @@ const BlogHero = () => {
             </motion.button>
           </div>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 w-[344px] md:w-full">
           <motion.img initial={{ x: 200, opacity: 0 }}
            whileInView={{ x: 0, opacity: 1 }}
            transition={{ duration: 1 }}

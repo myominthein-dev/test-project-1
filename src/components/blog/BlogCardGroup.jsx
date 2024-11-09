@@ -27,12 +27,13 @@ const BlogCardGroup = () => {
   return (
     <section className="px-5 md:px-0">
       <div className="flex flex-col gap-10 md:gap-20 py-10 md:py-20 max-w-[1200px] mx-auto px-0 md:px-5">
-        <h2 className="text-2xl md:text-3xl font-futura font-bold text-black-PRIMARY">
+        <h2 className="text-2xl pl-5 lg:p-0 md:text-3xl font-futura font-bold text-black-PRIMARY">
           Best of The week
         </h2>
-        <div className=" grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
+        <div className=" grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-12">
           {blogCards.map((card, index) => (
             <motion.div
+              
               key={card.id}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}

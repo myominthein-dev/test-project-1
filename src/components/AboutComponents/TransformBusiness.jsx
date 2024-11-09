@@ -4,7 +4,7 @@ import desktopComputer from "../../assets/AboutAssets/desktop-computer.png";
 import Button from "./Button";
 import {motion} from "framer-motion"
 const TransformBusiness = () => {
-  Aos.init();
+  
   return (
     <section className="">
       <Container className={"py-5 px-5 flex justify-center"}>

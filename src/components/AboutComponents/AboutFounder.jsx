@@ -1,12 +1,11 @@
 import React from "react";
 import Container from "../Container";
 import manWithCoffee from "../../assets/AboutAssets/man-with-coffee-at-work.png";
-import Aos from "aos";
-import "aos/dist/aos.css";
+
 
 import {motion} from "framer-motion"
 const AboutFounder = () => {
-  Aos.init();
+  
   return (
     <section>
       <Container className={"py-5  flex justify-center"}>

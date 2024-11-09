@@ -2,7 +2,7 @@ import React from "react";
 
 const BlogPostCard = ({ imgSrc, date, cardTitle, cardParagraph }) => {
   return (
-    <div className=" col-span-1 shadow-lg rounded-2xl hover:-translate-y-1 duration-200">
+    <div className=" col-span-1  w-[355px] md:w-full shadow-lg rounded-2xl hover:-translate-y-1 duration-200">
       <div>
         <img
           src={imgSrc}

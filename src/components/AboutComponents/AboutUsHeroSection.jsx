@@ -4,12 +4,12 @@ import Container from "../Container";
 import {motion} from "framer-motion"
 
 const AboutUsHeroSection = () => {
-  Aos.init();
+ 
   return (
-    <section className=" px-2 md:py-5 lg:py-14">
+    <section className="  px-2 md:py-5 lg:py-14">
       <Container className={"py-5 px-5  "}>
         <div className=" flex justify-between flex-col items-center gap-10">
-          <div className=" flex  lg:w-[864px] md:w-[764px] gap-2.5 mx-auto flex-col justify-center md:items-center md:text-center text-left  ">
+          <div className=" flex md:w-[640px] w-[355px]  lg:w-[864px]  gap-2.5 mx-auto flex-col justify-center md:items-center md:text-center text-left  ">
             <motion.h1 initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}

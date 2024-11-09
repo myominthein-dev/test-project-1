@@ -43,12 +43,12 @@ const BlogPost = () => {
     },
   ];
   return (
-    <section className="px-5 md:px-0">
-      <div className="flex flex-col gap-10 md:gap-20 py-10 md:py-20 max-w-[1200px] mx-auto px-0 md:px-5">
+    <section className="md:w-[640px] lg:w-full  mx-auto w-[355px]  md:px-0">
+      <div className="flex flex-col gap-10 md:gap-20 py-10 md:px-5 max-w-[1400px] md:py-20 mx-auto px-0 ">
         <h2 className="text-2xl md:text-3xl font-futura font-bold text-black-PRIMARY">
           New Blogs For You
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-5">
           {postLists.map((post, index) => (
             <motion.div
               key={post.id}
