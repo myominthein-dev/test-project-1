@@ -5,6 +5,12 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   base : "/",
   plugins: [react()],
+ 
+  server: {
+    hmr: {
+      overlay: false
+    }
+  },
   build: {
     rollupOptions: {
       external: ['aos', 'framer-motion', '@jdion/tilt-react'],
