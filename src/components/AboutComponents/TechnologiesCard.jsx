@@ -9,7 +9,7 @@ const TechnologiesCard = ({ icon, label, index }) => {
       <div
         data-aos="zoom-in"
         data-aos-delay={index * 600}
-        data-aos-easing="ease-in-out"
+        data-aos-easing="ease-in-out-back"
         data-aos-mirror="true"
         data-aos-duration="1000"
         className="  inline-flex items-center  gap-[10px] justify-center h-[70px]   "

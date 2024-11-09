@@ -18,7 +18,7 @@ const Ambition = () => {
             data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="1500"
-            data-aos-easing="ease-in-out"
+            data-aos-easing="ease-out-sine"
             data-aos-mirror="true"
             className=" flex items-center justify-center md:mt-0 mt-5 "
           >
@@ -33,7 +33,7 @@ const Ambition = () => {
             data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="1500"
-            data-aos-easing="ease-in-out"
+            data-aos-easing="ease-out-sine"
             data-aos-mirror="true"
             className="flex flex-col  gap-2.5 lg:w-[577px] md:w-[372px] w-[352px] "
           >

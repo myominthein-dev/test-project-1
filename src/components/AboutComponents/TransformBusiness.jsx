@@ -15,7 +15,7 @@ const TransformBusiness = () => {
             data-aos="flip-up"
             data-aos-delay="50"
             data-aos-duration="1000"
-            data-aos-easing="ease-in-sine"
+            data-aos-easing="ease-out-back"
             data-aos-mirror="true"
             className="flex flex-col  gap-2.5 lg:w-[491px] md:w-[372px] w-[352px] "
           >
@@ -42,7 +42,7 @@ const TransformBusiness = () => {
             data-aos="flip-right"
             data-aos-delay="50"
             data-aos-duration="1000"
-            data-aos-easing="ease-in-sine"
+            data-aos-easing="ease-out-back"
             data-aos-mirror="true"
             className=" md:flex items-center justify-center md:mt-0 mt-5  hidden "
           >
