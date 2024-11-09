@@ -12,21 +12,21 @@ const ContactUsHeroSection = () => {
     delaySpeed: 700,
   });
   return (
-    <div className=" w-full h-[909px]  ">
-      <div className=" flex flex-col justify-evenly h-full items-center ">
+    <div className=" w-full h-[709px] lg:h-[909px] ">
+      <div className=" flex flex-col justify-around h-full items-center ">
         {/* Paragraphs */}
-        <div className=" w-full lg:w-[864px] flex flex-col justify-center items-center gap-2">
+        <div className=" w-full px-5 lg:w-[864px] flex flex-col justify-center md:items-center items-start gap-2">
           <p className=" text-[#6596A1] text-[18px] lg:text-[22px] font-[500] leading-[22px]">
             {" "}
             Contact us
           </p>
-          <h1 className=" first-line:text-black-900 text-[#6596A1] text-[25px] lg:text-[61px] font-[700] leading-[30px] lg:leading-[67px] text-center">
+          <h1 className=" first-line:text-black-900 text-[#6596A1] text-[25px] lg:text-[61px] font-[700] leading-[30px] lg:leading-[67px] text-left md:text-center">
             <div>
               {text}{" "}
               <Cursor cursorStyle={isType && ">"} cursorColor="#6596A1" />
             </div>
           </h1>
-          <span className=" text-center text-[13px] lg:text-[20px] font-[500] leading-[28px] lg:w-[521px] text-[#7F7D7D]">
+          <span className=" text-left md:text-center text-[13px] lg:text-[20px] font-[500] leading-[28px] lg:w-[521px] text-[#7F7D7D]">
             The only corporate card and spent management platform designed to
             help you spend less.
           </span>

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Badge = ({ label }) => {
   return (
     <motion.div
-      className="relative inline-block px-4 py-1 text-base lg:text-xl font-futura rounded-[20px] text-blue-PRIMARY border border-lightGrey"
+      className="relative  inline-block px-4 py-1 text-base lg:text-xl font-futura rounded-[20px] text-blue-PRIMARY border border-lightGrey"
       whileHover={{
         scale: 1.1, // Slight enlargement on hover
         rotate: [0, 2, -2, 1, -1], // Gentle wobble rotation
