@@ -1,3 +1,4 @@
+import { Tilt } from "@jdion/tilt-react";
 import React from "react";
 
 const FeatureCard = ({
@@ -12,7 +13,7 @@ const FeatureCard = ({
     >
       <div className="w-[318.33px] h-[50px] flex justify-between">
         <img src={image} alt="gg" />
-        <button className="w-[88px] h-[46px] rounded-[8px] border border-[#6596A1]">
+        <button className="w-[88px] h-[46px] rounded-[8px] border border-blue-PRIMARY hover:bg-blue-300/30  active:scale-95 duration-200">
           {btnLabel}
         </button>
       </div>

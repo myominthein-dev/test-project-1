@@ -5,6 +5,12 @@ import yellowMan from "../../assets/HomeAssets/young-man-drawing-lines.png";
 import blueFemaleStudent from "../../assets/HomeAssets/blue-female-student.png";
 import FeatureCard from "./FeatureCard";
 import { CircleIcon, DotIcon, EllipsisIcon } from "lucide-react";
+import { motion } from "framer-motion";
+
+const popUpVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: { opacity: 1, scale: 1 },
+};
 
 const cards = [
   {
@@ -47,9 +53,38 @@ const TestimonialSection = () => {
         </div>
       </div>
       <div className="max-w-[1211px] grid gap-3 md:grid-cols-2 xl:grid-cols-3 h-[211px] ">
-        <FeatureCard className={'md:col-span-1'} info={cards[0]} />
-        <FeatureCard className={'md:col-span-1 hidden lg:block'} info={cards[1]} />
-        <FeatureCard className={'md:col-span-1 hidden xl:block'} info={cards[2]} />
+        <motion.div
+          className="md:col-span-1"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          variants={popUpVariants}
+        >
+          <FeatureCard info={cards[0]} />
+        </motion.div>
+
+        <motion.div
+          className="md:col-span-1 hidden md:block"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          variants={popUpVariants}
+        >
+          <FeatureCard info={cards[1]} />
+        </motion.div>
+
+        <motion.div
+          className="md:col-span-1 hidden xl:block"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          variants={popUpVariants}
+        >
+          <FeatureCard info={cards[2]} />
+        </motion.div>
       </div>
       <div className=" w-full flex items-center justify-center ">
         <div className="flex">

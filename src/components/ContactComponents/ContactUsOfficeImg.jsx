@@ -3,7 +3,7 @@ import officeBuilding from "../../assets/ContactAssets/3d-office-building.png";
 
 const ContactUsOfficeImg = () => {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full ">
       <img
         className=" object-contain w-full h-full"
         src={officeBuilding}

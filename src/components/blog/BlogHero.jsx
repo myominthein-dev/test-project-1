@@ -3,7 +3,7 @@ import girlTablet from "../../assets/BlogAssets/girl-using-tablet.png";
 
 const BlogHero = () => {
   return (
-    <div className="flex flex-col gap-14 max-w-[1200px] mx-auto">
+    <div className="flex flex-col gap-14 max-w-[1200px] mx-auto px-5 md:px-0">
       <div className=" mx-auto flex justify-center items-center mt-10">
         <div className="w-full flex flex-col justify-center items-start">
           <div className=" flex  items-center justify-center">
@@ -33,7 +33,9 @@ const BlogHero = () => {
               Discover expect tips, latest trends, and valuable insights in
               digital <br /> design and project management
             </p>
-            <button className="custom__button">Read More</button>
+            <button className="custom__button active:scale-95 duration-150">
+              Read More
+            </button>
           </div>
         </div>
         <div className="flex-1">

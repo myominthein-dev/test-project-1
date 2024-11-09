@@ -8,6 +8,12 @@ import divider from "../assets/HomeAssets/divider.svg";
 import star from "../assets/HomeAssets/star.svg";
 import yellowStar from "../assets/HomeAssets/yellow-star.svg";
 import placeholderIcon from "../assets/HomeAssets/placeholder.svg";
+import { motion } from "framer-motion";
+
+const avatarVariants = {
+  hidden: { x: -100, rotate: -180, opacity: 0 },
+  visible: { x: 0, rotate: 0, opacity: 1 },
+};
 
 const avatars = [avatarOne, avatarTwo, avatarThree, avatarFour, avatarFive];
 const rating = [1, 2, 3, 4];
@@ -33,11 +39,20 @@ const Testimonial = () => {
         <div className="text-center">
           <div className="flex justify-center">
             {avatars.map((avatar, index) => (
-              <img
+              <motion.img
                 key={index}
                 src={avatar}
                 className="size-8 -ml-2"
                 alt="Avatar"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.8,
+                  ease: "easeOut",
+                  delay: index * 0.1,
+                }}
+                variants={avatarVariants}
               />
             ))}
           </div>
@@ -64,10 +79,14 @@ const Testimonial = () => {
         </div>
 
         <div className="text-center">
-          <img
+          <motion.img
             src={placeholderIcon}
             className="mx-auto"
             alt="Placeholder Icon"
+            initial={{ scale: 0.3, rotate: -270, opacity: 1 }}
+            whileInView={{ scale: 1, rotate: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
           />
           <p className="font-lato text-secondaryGrey mt-4">
             Repurpose analytics with the possibility to come up.
