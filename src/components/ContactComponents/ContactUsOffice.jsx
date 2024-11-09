@@ -2,7 +2,7 @@ import React from "react";
 import ContactUsOfficeHeard from "./ContactUsOfficeHeard";
 import ContactUsOfficeImg from "./ContactUsOfficeImg";
 import ContactUsOfficeText from "./ContactUsOfficeText";
-
+import {motion} from "framer-motion"
 const ContactUsOffice = () => {
   const officeAddress = [
     {
@@ -21,9 +21,12 @@ const ContactUsOffice = () => {
   return (
     <div className=" mt-20">
       <ContactUsOfficeHeard />
-      <div className=" ">
-        <div className=" gap-5 lg:gap-0 lg:w-[1220px] lg:h-[507px] flex flex-col lg:flex-row justify-between items-center mt-10 mx-auto">
-          <div className=" flex gap-3 lg:gap-0 flex-col justify-evenly items-center lg:h-full">
+      <div className="  overflow-hidden">
+        <div className=" gap-5  lg:w-[1220px]  lg:h-[507px] flex flex-col md:flex-row  mt-10 mx-auto">
+          <motion.div initial={{ x: -300, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once:true }} className="  flex gap-3 lg:gap-0 flex-col justify-evenly items-center lg:h-full">
             {officeAddress.map((office) => (
               <ContactUsOfficeText
                 key={office.id}
@@ -32,10 +35,13 @@ const ContactUsOffice = () => {
                 address={office.address}
               />
             ))}
-          </div>
-          <div className="lg:w-[625px] h-full  ">
+          </motion.div>
+          <motion.div  initial={{ x: 300, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once:true }} className="w-full  h-full  ">
             <ContactUsOfficeImg />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
