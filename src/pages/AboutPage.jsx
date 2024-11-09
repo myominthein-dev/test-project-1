@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../components/Container";
+
 import AboutUsHeroSection from "../components/AboutComponents/AboutUsHeroSection";
 import TransformBusiness from "../components/AboutComponents/TransformBusiness";
 import Ambition from "../components/AboutComponents/Ambition";
@@ -11,7 +11,7 @@ const AboutPage = () => {
     <section>
       {/* Hero Section  */}
       <AboutUsHeroSection />
-      <div className=" flex flex-col gap-[100px]">
+      <div className=" flex flex-col">
         <TransformBusiness />
         <Ambition />
         <AboutFounder />

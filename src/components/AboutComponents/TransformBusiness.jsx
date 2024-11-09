@@ -15,9 +15,8 @@ const TransformBusiness = () => {
             data-aos="flip-up"
             data-aos-delay="50"
             data-aos-duration="1000"
-            data-aos-easing="cubic-bezier(0.1, -0.6, 0.2, 0)"
+            data-aos-easing="ease-in-sine"
             data-aos-mirror="true"
-            data-aos-anchor-placement="top-center"
             className="flex flex-col  gap-2.5 lg:w-[491px] md:w-[372px] w-[352px] "
           >
             <h1 className=" font-futura font-bold text-2xl   md:text-[22px] text-[20px] lg:text-[31px]  my-1 leading-[41.2px] sm:tracking-wide">
@@ -41,12 +40,10 @@ const TransformBusiness = () => {
 
           <div
             data-aos="flip-right"
-            // data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="1000"
-            data-aos-easing="cubic-bezier(0.1, -0.6, 0.2, 0)"
+            data-aos-easing="ease-in-sine"
             data-aos-mirror="true"
-            data-aos-anchor-placement="top-center"
             className=" md:flex items-center justify-center md:mt-0 mt-5  hidden "
           >
             <img
