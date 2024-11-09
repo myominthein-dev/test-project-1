@@ -1,13 +1,23 @@
 import React from "react";
 import fourPeopleAtTable from "../../assets/AboutAssets/four-people-at-table.png";
 import Container from "../Container";
+import Aos from "aos";
 
 const AboutUsHeroSection = () => {
+  Aos.init();
   return (
     <section className="   py-[80px]">
       <Container className={"py-5 px-5  "}>
         <div className=" flex justify-between flex-col items-center gap-10">
-          <div className=" flex  lg:w-[864px] md:w-[764px] gap-2.5 mx-auto flex-col justify-center md:items-center md:text-center text-left  ">
+          <div
+            data-aos="fade-down"
+            // data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            className=" flex  lg:w-[864px] md:w-[764px] gap-2.5 mx-auto flex-col justify-center md:items-center md:text-center text-left  "
+          >
             <h1 className=" text-blue-PRIMARY lg:text-[22px] md:text-[16px] font-medium  font-futura ">
               About us
             </h1>
@@ -20,7 +30,15 @@ const AboutUsHeroSection = () => {
               help you spend less.
             </p>
           </div>
-          <div className=" flex flex-col items-center justify-center mt-8 ">
+          <div
+            data-aos="fade-up"
+            // data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            className=" flex flex-col items-center justify-center mt-8 "
+          >
             <img
               className=" lg:w-[592px] md:w-[422.69px]"
               src={fourPeopleAtTable}
