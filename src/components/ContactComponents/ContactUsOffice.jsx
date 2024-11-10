@@ -23,7 +23,7 @@ const ContactUsOffice = () => {
       <ContactUsOfficeHeard />
       <div className="  overflow-hidden">
         <div className=" gap-5  lg:w-[1220px]  lg:h-[507px] flex flex-col md:flex-row  mt-10 mx-auto">
-          <motion.div initial={{ x: -300, opacity: 0 }}
+          <motion.div initial={{ x: -180, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
             viewport={{ once:true }} className="  flex gap-3 lg:gap-0 flex-col justify-evenly items-center lg:h-full">
@@ -38,7 +38,7 @@ const ContactUsOffice = () => {
           </motion.div>
           <motion.div  initial={{ x: 300, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.9 }}
             viewport={{ once:true }} className="w-full  h-full  ">
             <ContactUsOfficeImg />
           </motion.div>

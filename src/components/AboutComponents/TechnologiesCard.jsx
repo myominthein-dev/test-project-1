@@ -3,7 +3,9 @@ import HtmlAvatar from "../../assets/AboutAssets/html-avatar.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 const TechnologiesCard = ({ icon, label, index }) => {
-  Aos.init();
+  Aos.init({
+    once : true
+  });
   return (
     <>
       <div
@@ -12,6 +14,7 @@ const TechnologiesCard = ({ icon, label, index }) => {
         data-aos-easing="ease-in-out-back"
         data-aos-mirror="true"
         data-aos-duration="1000"
+        
         className="  inline-flex items-center  gap-[10px] justify-center h-[70px]   "
       >
         <img className=" opacity-50 size-[70px]" src={icon} alt="" />

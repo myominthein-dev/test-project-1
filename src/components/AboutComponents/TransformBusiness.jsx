@@ -12,7 +12,7 @@ const TransformBusiness = () => {
           <div className="flex flex-col  gap-2.5 lg:w-[491px] md:w-[372px] w-[352px] ">
             <motion.h1 initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.9 }}
                 viewport={{ once: true }} className=" font-futura font-bold text-2xl   md:text-[22px] text-[20px] lg:text-[31px]  my-1 leading-[41.2px] sm:tracking-wide">
               Transforming <br className="" /> business since 2014
             </motion.h1>
@@ -22,14 +22,14 @@ const TransformBusiness = () => {
             >
               <motion.p  initial={{ y: 100, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.9 }}
+                transition={{ duration: 1.2 }}
                 viewport={{ once: true }} className=" lg:w-[391px]  w-[334px] md:text-[16px] text-[14px]   ">
                 The passion with which we work allows us to transform a problem
                 into a challenge!
               </motion.p>
               <motion.p initial={{ y: 100, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1.2 }}
+                transition={{ duration: 1.5 }}
                 viewport={{ once: true }} className=" lg:w-[391px] md:w-[371px] w-[334px] md:text-[16px] text-[14px] ">
                 Technology has made our lives easier in so many ways, which
                 include a more connivent.
@@ -41,7 +41,7 @@ const TransformBusiness = () => {
           <div className=" flex flex-col md:flex-row items-center justify-center md:mt-0 mt-5   ">
             <motion.img initial={{ x: 200, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 1.9 }}
                 viewport={{ once:true }}
               className="lg:w-[531px] md:w-[372px] w-[352px]"
               src={desktopComputer}

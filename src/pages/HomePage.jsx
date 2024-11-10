@@ -11,7 +11,7 @@ import Action from "../components/Action";
 
 const HomePage = () => {
   return (
-    <section className="">
+    <section className="overflow-hidden">
       <HomeHeroSection/>
       <TestimonialSection/>
       <MasterfulDesign />

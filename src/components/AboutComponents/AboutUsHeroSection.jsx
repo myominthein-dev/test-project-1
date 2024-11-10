@@ -32,9 +32,9 @@ const AboutUsHeroSection = () => {
             </motion.p>
           </div>
           <div className=" flex flex-col items-center justify-center mt-8 ">
-            <motion.img initial={{ x: 200, opacity: 0 }}
+            <motion.img initial={{ x: 150, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.9 }}
                 viewport={{ once: true }}
               className=" lg:w-[592px] md:w-[422.69px]"
               src={fourPeopleAtTable}

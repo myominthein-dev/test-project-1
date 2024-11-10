@@ -35,7 +35,7 @@ const ContactUsHeroSection = () => {
         <div>
           <div className=" relative">
             <motion.img
-              initial={{ x: -300, opacity: 0 }}
+              initial={{ x: -180, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
@@ -44,9 +44,9 @@ const ContactUsHeroSection = () => {
             />
 
             <motion.img
-              initial={{ x: 300, opacity: 0 }}
+              initial={{ x: 180, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.9 }}
               viewport={{ once: true }}
               src={threeColleages}
               className="w-full lg:w-[592px] h-[436px] object-contain absolute top-6"

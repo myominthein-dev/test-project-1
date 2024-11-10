@@ -8,7 +8,7 @@ const ContactUsAddress = () => {
   return (
     <div className="w-full flex item-center justify-center  mt-20">
       <div className=" grid md:grid-cols-2 xl:grid-cols-3 gap-3 ">
-        <motion.div initial={{ y: 300, opacity: 0 }}
+        <motion.div initial={{ y: 180, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.3 }}
             viewport={{ once:true }} className="flex items-center justify-center">
@@ -19,7 +19,7 @@ const ContactUsAddress = () => {
         />
         </motion.div>
 
-        <motion.div initial={{ y: 300, opacity: 0 }}
+        <motion.div initial={{ y: 180, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
             viewport={{ once:true }}  className="hidden  md:flex justify-center items-center">
@@ -29,7 +29,7 @@ const ContactUsAddress = () => {
           addressText={"nonneffirahou-9496@yopmail.com"}
         />
         </motion.div>
-        <motion.div initial={{ y: 300, opacity: 0 }}
+        <motion.div initial={{ y: 180, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.9 }}
             viewport={{ once:true }}   className="hidden xl:block">

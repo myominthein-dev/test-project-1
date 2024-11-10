@@ -5,7 +5,7 @@ import { BlogCardGroup, BlogHero, BlogPost } from "../components/blog";
 import {motion} from "framer-motion"
 const BlogPage = () => {
   return (
-    <section>
+    <section className="overflow-hidden">
       <Container>
         <div className=" py-5 sm:py-7 lg:py-20">
         <div className=" flex  md:w-[640px] w-[355px]  lg:w-[864px] gap-2.5 mx-auto flex-col justify-center md:items-center md:text-center text-left  ">

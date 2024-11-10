@@ -8,7 +8,7 @@ import Techonologies from "../components/AboutComponents/Techonologies";
 
 const AboutPage = () => {
   return (
-    <section>
+    <section className="overflow-hidden">
       {/* Hero Section  */}
       <AboutUsHeroSection />
       <div className=" flex flex-col">

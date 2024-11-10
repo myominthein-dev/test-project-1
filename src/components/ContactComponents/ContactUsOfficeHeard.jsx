@@ -14,7 +14,7 @@ const ContactUsOfficeHeard = () => {
       </motion.h1>
       <motion.p initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.9 }}
             viewport={{ once:true }} className=" w-[350px] text-xs lg:text-[16px]  lg:w-[478px] text-center  font-[600] leading-[24px] text-[#7F7D7D]">
         We are part of th LACS creative community with 3 spaces in the lisbon
         region.

@@ -82,20 +82,20 @@ const HomeHeroSection = () => {
           </div>
         </div>
 
-        <div className="lg:w-[806.03px] w-[352px] h-[190px] md:w-[422.9px] md:h-[228.64px] relative flex  mx-auto  lg:h-[436px]">
+        <div className="lg:w-[806.03px]   w-[352px] h-[190px] md:w-[422.9px] md:h-[228.64px] relative flex  mx-auto  lg:h-[436px]">
           <motion.div
             initial={{ x: -150, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className=" relative w-[167px] h-[128px] left-10 md:left-20 top-10 z-20 md:w-[201.38px] md:h-[154.3px] lg:w-[384px] lg:h-[294.23px] "
+            className=" relative w-[167px]  h-[128px] left-10 md:left-20 top-10 z-20 md:w-[201.38px] md:h-[154.3px] lg:w-[384px] lg:h-[294.23px] "
           >
-            <img className="h-full w-full object-cover" src={plantAndChair} />
+            <img className="h-full  w-full object-cover" src={plantAndChair} />
           </motion.div>
           <motion.div
-            initial={{ x: 300, opacity: 0 }}
+            initial={{ x: 150, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.9 }}
             viewport={{ once: true }}
             className=" z-30 w-[258.53px] h-[190.41px] lg:w-[592px] lg:h-[436px] md:w-[310.45px] md:h-[228.64px]"
           >
