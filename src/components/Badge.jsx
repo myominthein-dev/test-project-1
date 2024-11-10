@@ -3,6 +3,10 @@ import { motion } from "framer-motion";
 const Badge = ({ label }) => {
   return (
     <motion.div
+    initial={{ y: -50, opacity: 0 }}
+    whileInView={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    viewport={{ once: true }}
       className="relative  inline-block px-4 py-1 text-base lg:text-xl font-futura rounded-[20px] text-blue-PRIMARY border border-lightGrey"
       whileHover={{
         scale: 1.1, // Slight enlargement on hover

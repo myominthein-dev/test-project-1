@@ -2,7 +2,7 @@ import Badge from "./Badge";
 import Container from "./Container";
 import manImg from "../assets/HomeAssets/young-man-drawing-lines.png";
 import checkIcon from "../assets/check.png";
-
+import {motion} from "framer-motion"
 const textList = [
   "Enterprise-grade security",
   "99.9% guaranteed uptime SLA",
@@ -19,15 +19,24 @@ const NextLevelInnovation = () => {
           <Badge label="Next-Level Innovation" />
 
           </div>
-          <h2 className="font-futura font-bold text-2xl md:text-[25px] lg:text-[31px] text-black-PRIMARY my-1">
+          <motion.h2 initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }} className="font-futura font-bold text-2xl md:text-[25px] lg:text-[31px] text-black-PRIMARY my-1">
             Demonstrate branding consequently think outside
-          </h2>
-          <p className="text-sm md:text-base text-secondaryGrey font-lato">
+          </motion.h2>
+          <motion.p initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.9 }}
+            viewport={{ once: true }} className="text-sm md:text-base text-secondaryGrey font-lato">
             Velit purus egestas tellus phasellus. Mattis eget sed faucibus magna
             vulputate pellentesque{" "}
-          </p>
+          </motion.p>
           
-          <ul className="mt-2">
+          <motion.ul initial={{ x: 150, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.9 }}
+            viewport={{ once: true }}  className="mt-2">
             {textList.map((item) => (
               <li
                 className="font-lato text-sm md:text-[16px] text-secondaryGrey flex items-center gap-2"
@@ -40,10 +49,13 @@ const NextLevelInnovation = () => {
                 {item}
               </li>
             ))}
-          </ul>
+          </motion.ul>
         </div>
         <div className="mx-auto">
-          <img src={manImg} alt="Man Drawing Picture" />
+          <motion.img initial={{ x: 150, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.9 }}
+            viewport={{ once: true }}  src={manImg} alt="Man Drawing Picture" />
         </div>
       </div>
     </Container>
